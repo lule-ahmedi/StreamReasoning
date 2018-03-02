@@ -1,0 +1,6 @@
+[RemoveB{10}:
+(?p rdf:type http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tempObservationMeasurement)
+->
+remove(?p http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tempObservationMeasurement)
+]
+

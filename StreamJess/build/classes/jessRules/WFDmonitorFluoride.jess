@@ -1,0 +1,84 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; Fluoride should be less than 500 μg/l
+
+; Decide the status based on the observed value
+; Link the derived status with the interval of observation
+(defrule classifyFluorideObsValue
+    (declare (salience 754))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#Fluoride))
+    )
+=>
+	(bind ?*r* (random))
+        (printout t "(StreamJess)" crlf)
+	(if (< ?x 500)
+	then 
+            (printout t "GOOD/HIGH status detected: Fluoride" ?*r*  crlf)
+            (make-instance (str-cat "GoodHighFluorideStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#GoodHighFluorideMeasurement map)
+            (slot-insert$ (str-cat "GoodHighFluorideStatus" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                1 
+                ?loc)
+            (slot-insert$ (str-cat "GoodHighFluorideStatus" ?*r*)
+                    http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                    1 
+                    ?ot)
+            (slot-set ?loc 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+            FALSE)
+	else
+            (printout t "MODERATE status detected: Fluoride" ?*r*  crlf)
+            (make-instance (str-cat "ModerateFluorideStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tmpModerateFluorideMeasurement map)
+            (slot-insert$ (str-cat "ModerateFluorideStatus" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                1 
+                ?loc)
+            (slot-insert$ (str-cat "ModerateFluorideStatus" ?*r*)
+                    http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                    1 
+                    ?ot)
+            (slot-set ?loc 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+            TRUE)
+	)
+        (make-instance (str-cat (instance-name ?o) ?*r*) of http://purl.oclc.org/NET/ssnx/ssn#Observation map)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+            1 
+            ?loc)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://purl.oclc.org/NET/ssnx/ssn#observationResult
+            1 
+            ?so)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime
+            1 
+            ?ot)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation
+            1 
+            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#Fluoride)
+        (unmake-instance ?o)
+)
+
+

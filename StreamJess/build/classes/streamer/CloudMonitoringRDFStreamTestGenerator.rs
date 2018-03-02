@@ -1,0 +1,1 @@
+eu.larkc.csparql.readytogopack.streamer.CloudMonitoringRDFStreamTestGenerator

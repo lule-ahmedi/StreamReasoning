@@ -1,0 +1,109 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; If benthic invertebrate fauna reaches 0.85 ecological quality ratio , than river belongs to the high – good boundary ecological status (color code: blue-green)
+; If benthic invertebrate fauna reaches 0.75 ecological quality ratio, than river belongs to the good – moderate boundary ecological status (color code: green-yellow)
+;
+
+; Decide the status based on the computed average value
+; Link the derived status with the interval of observation
+
+(defrule BenthicObservationsClassification
+    (declare (salience 9))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#BenthicInvertebrateFauna))
+    )
+=>
+    (bind ?*r* (random))
+    (printout t "(StreamJess)" crlf)
+    (if (and (< ?x 0.85)(> ?x 0.75))
+    then 
+            (and
+                    (printout t "GOOD/MODERATE status detected: Benthic" ?*r*  crlf)
+                    (make-instance (str-cat "GoodBenthicStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#GoodModerateBenthicMeasurement map)
+                    (slot-insert$ (str-cat "GoodBenthicStatus" ?*r*)
+                        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                        1 
+                        ?loc)
+                    (slot-insert$ (str-cat "GoodBenthicStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        FALSE)
+            )
+    )
+    (if (> ?x 0.85) 
+    then
+            (and
+                    (printout t "HIGH/GOOD status detected: Benthic" ?*r* crlf)
+                    (make-instance (str-cat "HighBenthicStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#HighGoodBenthicMeasurement map)
+                    (slot-insert$ (str-cat "HighBenthicStatus" ?*r*)
+                        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                        1 
+                        ?loc)
+                    (slot-insert$ (str-cat "HighBenthicStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        FALSE)
+            )
+    )
+    (if (< ?x 0.75)  
+    then
+            (and
+                    (printout t "POOR/BAD status detected: Benthic" ?*r* crlf)
+                    (make-instance (str-cat "PoorBadBenthicStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tmpPoorBadBenthicMeasurement map)
+                    (slot-insert$ (str-cat "PoorBadBenthicStatus" ?*r*)
+                            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                            1 
+                            ?loc)
+                    (slot-insert$ (str-cat "PoorBadBenthicStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        TRUE)
+            )
+    )
+    (make-instance (str-cat (instance-name ?o) ?*r*) of http://purl.oclc.org/NET/ssnx/ssn#Observation map)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+        1 
+        ?loc)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResult
+        1 
+        ?so)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResultTime
+        1 
+        ?ot)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation
+        1 
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#BiochemicalOxygenDemand)
+    (unmake-instance ?o)
+)

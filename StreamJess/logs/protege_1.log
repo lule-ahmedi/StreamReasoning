@@ -1,0 +1,644 @@
+2016.03.20 20:20:34.174 CET INFO: *** SYSTEM START ***
+2016.03.20 20:20:34.174 CET CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.03.20 20:20:34.174 CET WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\CJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.03.20 20:20:36.249 CET WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.03.20 20:20:37.511 CET WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\CJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.03.20 20:20:37.916 CET INFO: Loading triples for: file:/D:/Personal/Desktop/inwsJessOntologies/inws-jess.owl -- ProtegeOWLParser.loadTriples()
+2016.03.20 20:20:38.588 CET INFO:     Completed triple loading after 672 ms -- ProtegeOWLParser.loadTriples()
+2016.03.20 20:20:38.603 CET INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: D:\Personal\Desktop\inwsJessOntologies\inws-pollutants1.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.03.20 20:20:38.603 CET INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.03.20 20:20:38.619 CET INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2016.03.20 20:20:38.619 CET INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.03.20 20:20:38.619 CET INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: D:\Personal\Desktop\inwsJessOntologies\inws-regulations1.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.03.20 20:20:38.634 CET INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.03.20 20:20:38.697 CET INFO:     Completed triple loading after 63 ms -- ProtegeOWLParser.loadTriples()
+2016.03.20 20:20:38.697 CET INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.03.20 20:20:38.697 CET INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.03.20 20:20:38.697 CET INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.03.20 20:20:38.697 CET INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.03.20 20:20:38.697 CET INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.03.20 20:20:38.697 CET INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.03.20 20:20:38.697 CET INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.03.20 20:20:38.697 CET INFO: Postprocess: Instances with multiple types (91 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.03.20 20:20:38.697 CET INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.03.20 20:20:38.697 CET INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.03.20 20:20:38.697 CET INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.03.20 20:20:38.697 CET INFO: Postprocess: Process orphan classes (209 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.03.20 20:20:38.728 CET INFO: 31 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.03.20 20:20:38.728 CET INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.03.20 20:20:38.728 CET INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.03.20 20:20:38.728 CET INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.03.20 20:20:38.728 CET INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.03.20 20:20:38.728 CET INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.03.20 20:20:38.728 CET INFO: 0 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.03.20 20:20:38.728 CET INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.03.20 20:20:38.728 CET INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.03.20 20:20:38.759 CET INFO: Updating underlying frames model in 15 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:05:13.255 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:05:13.270 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:05:13.270 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:05:14.471 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:05:16.047 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:05:17.716 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:05:18.761 CEST INFO:     Completed triple loading after 1045 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:05:18.761 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:05:19.120 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:05:19.136 CEST INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:05:19.136 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:05:19.136 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:05:19.463 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:05:19.791 CEST INFO:     Completed triple loading after 312 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:05:19.791 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:05:19.807 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:05:19.807 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:05:19.807 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:05:19.807 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:05:19.807 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:05:19.807 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:05:19.807 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:05:19.807 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:05:19.807 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:05:19.807 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:05:19.822 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:05:19.822 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:05:19.822 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:05:19.822 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:05:19.822 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:05:19.822 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:05:19.822 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:05:19.838 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:05:19.838 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:05:19.838 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:05:19.900 CEST INFO: Updating underlying frames model in 62 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:07:01.150 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:07:01.166 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:07:01.166 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:07:02.289 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:07:03.568 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:07:04.567 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:07:05.659 CEST INFO:     Completed triple loading after 1092 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:07:05.659 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:07:06.002 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:07:06.018 CEST INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:07:06.018 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:07:06.018 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:07:06.345 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:07:06.610 CEST INFO:     Completed triple loading after 265 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:07:06.610 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:07:06.610 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:07:06.626 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:07:06.626 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:07:06.626 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:07:06.626 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:07:06.626 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:07:06.626 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:07:06.626 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:07:06.626 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:07:06.626 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:07:06.626 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:07:06.642 CEST INFO: 16 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:07:06.642 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:07:06.642 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:07:06.642 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:07:06.642 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:07:06.642 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:07:06.657 CEST INFO: 15 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:07:06.657 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:07:06.657 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:07:06.720 CEST INFO: Updating underlying frames model in 63 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:21:40.269 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:21:40.269 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:21:40.285 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:21:41.892 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:21:43.171 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:21:44.668 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:21:45.667 CEST INFO:     Completed triple loading after 999 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:21:45.682 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:21:46.088 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:21:46.135 CEST INFO:     Completed triple loading after 47 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:21:46.135 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:21:46.135 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:21:46.462 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:21:46.634 CEST INFO:     Completed triple loading after 172 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:21:46.634 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:21:46.634 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:21:46.634 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:21:46.634 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:21:46.634 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:21:46.634 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:21:46.634 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:21:46.634 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:21:46.634 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:21:46.650 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:21:46.650 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:21:46.650 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:21:46.650 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:21:46.650 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:21:46.650 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:21:46.650 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:21:46.650 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:21:46.665 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:21:46.681 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:21:46.681 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:21:46.681 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:21:46.728 CEST INFO: Updating underlying frames model in 47 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:24:39.360 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:24:39.360 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:24:39.376 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:24:40.920 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:24:42.433 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:24:43.603 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:24:44.680 CEST INFO:     Completed triple loading after 1061 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:24:44.680 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:24:45.070 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:24:45.101 CEST INFO:     Completed triple loading after 31 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:24:45.101 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:24:45.101 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:24:45.428 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:24:45.616 CEST INFO:     Completed triple loading after 188 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:24:45.616 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:24:45.631 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:24:45.631 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:24:45.631 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:24:45.631 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:24:45.631 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:24:45.631 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:24:45.631 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:24:45.631 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:24:45.631 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:24:45.631 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:24:45.647 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:24:45.662 CEST INFO: 15 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:24:45.662 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:24:45.662 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:24:45.662 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:24:45.662 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:24:45.662 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:24:45.678 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:24:45.694 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:24:45.694 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:24:45.787 CEST INFO: Updating underlying frames model in 93 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:29:03.775 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:29:03.775 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:29:03.775 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:29:04.976 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:29:06.427 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:29:07.987 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:29:08.970 CEST INFO:     Completed triple loading after 968 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:29:08.970 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:29:09.375 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:29:09.391 CEST INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:29:09.391 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:29:09.406 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:29:09.718 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:29:10.030 CEST INFO:     Completed triple loading after 312 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:29:10.030 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:29:10.030 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:29:10.030 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:29:10.030 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:29:10.030 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:29:10.030 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:29:10.030 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:29:10.030 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:29:10.046 CEST INFO: 16 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:29:10.046 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:29:10.046 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:29:10.046 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:29:10.062 CEST INFO: 16 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:29:10.062 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:29:10.062 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:29:10.062 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:29:10.062 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:29:10.062 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:29:10.093 CEST INFO: 31 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:29:10.093 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:29:10.108 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:29:10.155 CEST INFO: Updating underlying frames model in 47 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:51:59.704 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:51:59.720 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:51:59.735 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:52:00.937 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:52:02.216 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:52:03.713 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:52:04.759 CEST INFO:     Completed triple loading after 1046 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:52:04.759 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:52:05.102 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:52:05.117 CEST INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:52:05.117 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:52:05.133 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:52:05.461 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:52:05.741 CEST INFO:     Completed triple loading after 280 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:52:05.741 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:52:05.741 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:52:05.741 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:52:05.741 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:52:05.741 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:52:05.741 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:52:05.741 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:52:05.741 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:52:05.741 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:52:05.741 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:52:05.741 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:52:05.757 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:52:05.757 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:52:05.757 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:52:05.757 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:52:05.757 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:52:05.757 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:52:05.757 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:52:05.788 CEST INFO: 31 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:52:05.788 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:52:05.788 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:52:05.866 CEST INFO: Updating underlying frames model in 78 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:53:08.009 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:53:08.025 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:53:08.025 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:53:09.928 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:53:12.112 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:53:14.156 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:53:15.388 CEST INFO:     Completed triple loading after 1232 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:53:15.388 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:53:15.809 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:53:15.840 CEST INFO:     Completed triple loading after 31 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:53:15.840 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:53:15.840 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:53:16.168 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:53:16.230 CEST INFO:     Completed triple loading after 62 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:53:16.230 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:53:16.246 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:53:16.246 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:53:16.246 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:53:16.246 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:53:16.246 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:53:16.246 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:53:16.246 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:53:16.246 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:53:16.246 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:53:16.246 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:53:16.246 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:53:16.262 CEST INFO: 16 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:53:16.262 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:53:16.262 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:53:16.262 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:53:16.262 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:53:16.262 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:53:16.277 CEST INFO: 15 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:53:16.277 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:53:16.277 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:53:16.355 CEST INFO: Updating underlying frames model in 78 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 07:57:04.429 CEST INFO: *** SYSTEM START ***
+2016.08.08 07:57:04.444 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 07:57:04.444 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 07:57:05.443 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 07:57:06.660 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 07:57:08.095 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:57:08.859 CEST INFO:     Completed triple loading after 764 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:57:08.875 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:57:09.202 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:57:09.234 CEST INFO:     Completed triple loading after 32 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:57:09.234 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:57:09.234 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:57:09.577 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:57:10.076 CEST INFO:     Completed triple loading after 499 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 07:57:10.076 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 07:57:10.076 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:57:10.076 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 07:57:10.076 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:57:10.076 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 07:57:10.076 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:57:10.076 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 07:57:10.076 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:57:10.092 CEST INFO: 16 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 07:57:10.092 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:57:10.092 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 07:57:10.092 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:57:10.107 CEST INFO: 15 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 07:57:10.107 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:57:10.107 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 07:57:10.107 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:57:10.107 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 07:57:10.107 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:57:10.123 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 07:57:10.123 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:57:10.123 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 07:57:10.185 CEST INFO: Updating underlying frames model in 62 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 08:55:37.167 CEST INFO: *** SYSTEM START ***
+2016.08.08 08:55:37.167 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 08:55:37.183 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 08:55:38.447 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 08:55:39.632 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 08:55:41.145 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:55:41.816 CEST INFO:     Completed triple loading after 671 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:55:41.816 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:55:42.222 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:55:42.503 CEST INFO:     Completed triple loading after 281 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:55:42.503 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:55:42.503 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:55:42.939 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:55:43.080 CEST INFO:     Completed triple loading after 141 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:55:43.080 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:55:43.080 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 08:55:43.080 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 08:55:43.080 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 08:55:43.080 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 08:55:43.080 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 08:55:43.080 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 08:55:43.080 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 08:55:43.080 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 08:55:43.095 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 08:55:43.095 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 08:55:43.095 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 08:55:43.095 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 08:55:43.095 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 08:55:43.095 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 08:55:43.111 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 08:55:43.111 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 08:55:43.111 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 08:55:43.127 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 08:55:43.127 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 08:55:43.127 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 08:55:43.173 CEST INFO: Updating underlying frames model in 46 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 08:56:01.114 CEST INFO: *** SYSTEM START ***
+2016.08.08 08:56:01.114 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 08:56:01.130 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 08:56:02.815 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 08:56:04.094 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 08:56:04.983 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:56:06.216 CEST INFO:     Completed triple loading after 1233 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:56:06.216 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:56:06.559 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:56:06.574 CEST INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:56:06.574 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:56:06.590 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:56:06.933 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:56:07.074 CEST INFO:     Completed triple loading after 141 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:56:07.074 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:56:07.074 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 08:56:07.074 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 08:56:07.074 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 08:56:07.074 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 08:56:07.074 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 08:56:07.074 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 08:56:07.074 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 08:56:07.074 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 08:56:07.074 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 08:56:07.089 CEST INFO: 15 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 08:56:07.089 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 08:56:07.089 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 08:56:07.089 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 08:56:07.089 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 08:56:07.089 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 08:56:07.089 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 08:56:07.089 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 08:56:07.105 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 08:56:07.105 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 08:56:07.105 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 08:56:07.183 CEST INFO: Updating underlying frames model in 78 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 08:59:05.245 CEST INFO: *** SYSTEM START ***
+2016.08.08 08:59:05.260 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 08:59:05.260 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 08:59:06.227 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 08:59:07.522 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 08:59:08.554 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:59:09.412 CEST INFO:     Completed triple loading after 843 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:59:09.412 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:59:09.755 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:59:09.771 CEST INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:59:09.771 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:59:09.771 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:59:10.129 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:59:10.192 CEST INFO:     Completed triple loading after 63 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 08:59:10.192 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 08:59:10.192 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 08:59:10.192 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 08:59:10.192 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 08:59:10.192 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 08:59:10.192 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 08:59:10.192 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 08:59:10.192 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 08:59:10.207 CEST INFO: 15 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 08:59:10.207 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 08:59:10.207 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 08:59:10.207 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 08:59:10.207 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 08:59:10.207 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 08:59:10.207 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 08:59:10.223 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 08:59:10.223 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 08:59:10.223 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 08:59:10.254 CEST INFO: 31 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 08:59:10.254 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 08:59:10.254 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 08:59:10.301 CEST INFO: Updating underlying frames model in 47 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 09:02:38.879 CEST INFO: *** SYSTEM START ***
+2016.08.08 09:02:38.879 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 09:02:38.879 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 09:02:39.956 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 09:02:41.375 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 09:02:42.717 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:02:43.622 CEST INFO:     Completed triple loading after 905 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:02:43.637 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:02:43.965 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:02:43.980 CEST INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:02:43.980 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:02:43.980 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:02:44.402 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:02:44.511 CEST INFO:     Completed triple loading after 109 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:02:44.511 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:02:44.511 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 09:02:44.511 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 09:02:44.511 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 09:02:44.511 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 09:02:44.511 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 09:02:44.511 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 09:02:44.511 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 09:02:44.511 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 09:02:44.511 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 09:02:44.511 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 09:02:44.511 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 09:02:44.714 CEST INFO: 203 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 09:02:44.714 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 09:02:44.714 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 09:02:44.714 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 09:02:44.714 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 09:02:44.714 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 09:02:44.760 CEST INFO: 46 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 09:02:44.760 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 09:02:44.760 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 09:02:44.854 CEST INFO: Updating underlying frames model in 94 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2016.08.08 09:44:12.715 CEST INFO: *** SYSTEM START ***
+2016.08.08 09:44:12.715 CEST CONFIG: Protege 3.5 Build 663, JVM 1.8.0_60-b27, memory=259M, Windows 7, encoding=UTF-8, language=en, country=US -- SystemUtilities.logSystemInfo()
+2016.08.08 09:44:12.730 CEST WARNING: Plugins directory not found: D:\Personal\Documents\NetBeansProjects\StreamJess\plugins -- PluginUtilities.findPluginsDirectory()
+2016.08.08 09:44:13.931 CEST WARNING: missing bundle: protege_text -- BundleHelper.<init>()
+2016.08.08 09:44:15.117 CEST WARNING: [Local Folder Repository] The specified file must be a directory. (D:\Personal\Documents\NetBeansProjects\StreamJess\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2016.08.08 09:44:16.599 CEST INFO: Loading triples for: file:/D:/Personal/Desktop/ontologji%20funksionale%20per%20streamJess/INWS-all3.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:44:17.270 CEST INFO:     Completed triple loading after 655 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:44:17.270 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:44:17.660 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:44:17.675 CEST INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:44:17.675 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:44:17.675 CEST INFO: Importing http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl from location: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:44:18.019 CEST INFO: Loading triples for: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:44:18.097 CEST INFO:     Completed triple loading after 78 ms -- ProtegeOWLParser.loadTriples()
+2016.08.08 09:44:18.097 CEST INFO: http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl already imported as triple store http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl -- AbstractOWLModel.loadImportedAssertions()
+2016.08.08 09:44:18.097 CEST INFO: Postprocess: Process entities with incorrect Java type (2 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 09:44:18.097 CEST INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2016.08.08 09:44:18.097 CEST INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2016.08.08 09:44:18.097 CEST INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2016.08.08 09:44:18.097 CEST INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 09:44:18.097 CEST INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2016.08.08 09:44:18.097 CEST INFO: Postprocess: Instances with multiple types (93 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 09:44:18.097 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2016.08.08 09:44:18.097 CEST INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 09:44:18.097 CEST INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2016.08.08 09:44:18.112 CEST INFO: Postprocess: Process orphan classes (212 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2016.08.08 09:44:18.112 CEST INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2016.08.08 09:44:18.112 CEST INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 09:44:18.112 CEST INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2016.08.08 09:44:18.112 CEST INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 09:44:18.112 CEST INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2016.08.08 09:44:18.112 CEST INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 09:44:18.128 CEST INFO: 16 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2016.08.08 09:44:18.128 CEST INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 09:44:18.128 CEST INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2016.08.08 09:44:18.190 CEST INFO: Updating underlying frames model in 62 ms -- ProtegeOWLParser.doFinalPostProcessing()

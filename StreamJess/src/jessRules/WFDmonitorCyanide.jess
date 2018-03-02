@@ -1,0 +1,84 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; Cyanide  should be less than 10 μg/l
+
+; Decide the status based on the observed value
+; Link the derived status with the interval of observation
+(defrule classifyCyanideObsValue
+    (declare (salience 54))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#Cyanide))
+    )
+=>
+	(bind ?*r* (random))
+        (printout t "(StreamJess)" crlf)
+	(if (< ?x 10)
+	then 
+            (printout t "GOOD/HIGH status detected: Cyanide" ?*r*  crlf)
+            (make-instance (str-cat "GoodHighCyanideStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#GoodHighCyanideMeasurement map)
+            (slot-insert$ (str-cat "GoodHighCyanideStatus" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                1 
+                ?loc)
+            (slot-insert$ (str-cat "GoodHighCyanideStatus" ?*r*)
+                    http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                    1 
+                    ?ot)
+            (slot-set ?loc 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+            FALSE)
+	else
+            (printout t "MODERATE status detected: Cyanide" ?*r*  crlf)
+            (make-instance (str-cat "ModerateCyanideStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tmpModerateCyanideMeasurement map)
+            (slot-insert$ (str-cat "ModerateCyanideStatus" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                1 
+                ?loc)
+            (slot-insert$ (str-cat "ModerateCyanideStatus" ?*r*)
+                    http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                    1 
+                    ?ot)
+            (slot-set ?loc 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+            TRUE)
+	)
+        (make-instance (str-cat (instance-name ?o) ?*r*) of http://purl.oclc.org/NET/ssnx/ssn#Observation map)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+            1 
+            ?loc)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://purl.oclc.org/NET/ssnx/ssn#observationResult
+            1 
+            ?so)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime
+            1 
+            ?ot)
+        (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+            http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation
+            1 
+            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#Cyanide)
+        (unmake-instance ?o)
+)
+
+

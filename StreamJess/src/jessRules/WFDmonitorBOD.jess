@@ -1,0 +1,109 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; If BOD5 in mg O2/l is less than 1.3 (mean), than river belongs to high status of oxygen condition (color code: blue)
+; If BOD5 in mg O2/l is less than 1.5 (mean), than river belongs to good status of oxygen condition (color code: green)
+;
+
+; Decide the status based on the computed average value
+; Link the derived status with the interval of observation
+
+(defrule BOD5ObservationsClassification
+    (declare (salience 9))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#BiochemicalOxygenDemand))
+    )
+=>
+    (bind ?*r* (random))
+    (printout t "(StreamJess)" crlf)
+    (if (and (> ?x 1.3)(< ?x 1.5)) 
+    then 
+            (and
+                    (printout t "GOOD status detected: BOD" ?*r*  " In:" (instance-name ?loc) " On:" ?time crlf)
+                    (make-instance (str-cat "GoodBODStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#GoodBODMeasurement map)
+                    (slot-insert$ (str-cat "GoodBODStatus" ?*r*)
+                        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                        1 
+                        ?loc)
+                    (slot-insert$ (str-cat "GoodBODStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        FALSE)
+            )
+    )
+    (if (< ?x 1.3) 
+    then
+            (and
+                    (printout t "HIGH status detected: BOD" ?*r* " In:" (instance-name ?loc) " On:" ?time crlf)
+                    (make-instance (str-cat "HighBODStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#HighBODMeasurement map)
+                    (slot-insert$ (str-cat "HighBODStatus" ?*r*)
+                        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                        1 
+                        ?loc)
+                    (slot-insert$ (str-cat "HighBODStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        FALSE)
+            )
+    )
+    (if (> ?x 1.5) 
+    then
+            (and
+                    (printout t "MODERATE status detected: BOD" ?*r* " In:" (instance-name ?loc) " On:" ?time crlf)
+                    (make-instance (str-cat "ModerateBODStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tmpModerateBODMeasurement map)
+                    (slot-insert$ (str-cat "ModerateBODStatus" ?*r*)
+                            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                            1 
+                            ?loc)
+                    (slot-insert$ (str-cat "ModerateBODStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        TRUE)
+            )
+    )
+    (make-instance (str-cat (instance-name ?o) ?*r*) of http://purl.oclc.org/NET/ssnx/ssn#Observation map)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+        1 
+        ?loc)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResult
+        1 
+        ?so)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResultTime
+        1 
+        ?ot)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation
+        1 
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#BiochemicalOxygenDemand)
+    (unmake-instance ?o)
+)

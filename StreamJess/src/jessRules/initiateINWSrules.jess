@@ -1,0 +1,32 @@
+;
+; InWaterSense Rules
+;
+; This file need to be loaded for populating Jess's working memory
+; with InWaterSense ontology facts
+;
+; Load this file with batch command e.g. (batch "C:\\initiateINWSrules.jess")
+
+; map required classes
+(mapclass http://purl.oclc.org/NET/ssnx/ssn#Observation)
+(mapclass http://purl.oclc.org/NET/ssnx/ssn#SensorOutput)
+(mapclass http://purl.oclc.org/NET/ssnx/ssn#ObservationValue)
+(mapclass http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#WFDstatus)
+(mapclass http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#WaterQuality)
+(mapclass http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+(mapclass http://www.w3.org/2006/time#Instant)
+(mapclass http://sweet.jpl.nasa.gov/2.1/realmHydroBody.owl#BodyOfWater)
+(mapclass http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl#Pollutant)
+(mapclass http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl#PollutionSources)
+(mapclass http://tw2.tw.rpi.edu/zhengj3/owl/epa.owl#WaterMeasurement)
+(mapclass http://tw2.tw.rpi.edu/zhengj3/owl/epa.owl#MeasurementSite)
+(reset)
+
+; import Java classes
+(import java.util.Random)
+(import java.util.Date)
+
+; A global random variable for building unique OWL resources
+(bind ?*r* (random))
+
+(printout t "All StreamJess initial components loaded..." crlf)
+

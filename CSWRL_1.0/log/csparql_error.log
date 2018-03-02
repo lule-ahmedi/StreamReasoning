@@ -1,0 +1,10 @@
+ERROR 626 [2015-11-24 01:23:18,171] [main] csparql096.HelloWorldCSPARQL  - The model in the FROM clause is missing in the internal dataset, please put the static model in the dataset using putStaticNamedModel(String iri, String location) method of the engine.
+java.text.ParseException: The model in the FROM clause is missing in the internal dataset, please put the static model in the dataset using putStaticNamedModel(String iri, String location) method of the engine.
+	at eu.larkc.csparql.sparql.jena.JenaEngine.parseSparqlQuery(JenaEngine.java:544)
+	at eu.larkc.csparql.core.engine.CsparqlEngineImpl.registerQuery(CsparqlEngineImpl.java:309)
+	at csparql096.HelloWorldCSPARQL.main(HelloWorldCSPARQL.java:321)
+ERROR 624 [2015-11-29 10:17:36,267] [main] csparql096.HelloWorldCSPARQL  - The model in the FROM clause is missing in the internal dataset, please put the static model in the dataset using putStaticNamedModel(String iri, String location) method of the engine.
+java.text.ParseException: The model in the FROM clause is missing in the internal dataset, please put the static model in the dataset using putStaticNamedModel(String iri, String location) method of the engine.
+	at eu.larkc.csparql.sparql.jena.JenaEngine.parseSparqlQuery(JenaEngine.java:544)
+	at eu.larkc.csparql.core.engine.CsparqlEngineImpl.registerQuery(CsparqlEngineImpl.java:309)
+	at csparql096.HelloWorldCSPARQL.main(HelloWorldCSPARQL.java:321)

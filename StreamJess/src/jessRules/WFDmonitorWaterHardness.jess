@@ -1,0 +1,84 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; 	If water hardness is less than 100 mg/l CaCO3, than water is soft
+;	If water hardness is greater than 100 mg/l CaCO3, than water is hard
+;
+; Author: Edmond Jajaga, South East European University
+;
+
+; Decide the status based on the computed average value
+
+(defrule WFDclassifyWaterHardness
+    (declare (salience 72))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) (instance-name http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#WaterHardness)))
+    )
+=>
+    (bind ?*r* (random))
+    (printout t "(StreamJess)")
+    (if (< ?x 100) 
+    then 
+        (and
+            (printout t "(" ?*r* ") Water Hardness status is SOFT" crlf "On: " ?time crlf "In: " (instance-name ?loc) crlf)
+            (make-instance (str-cat "SoftWaterHardnessStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#Soft)
+            (slot-insert$ (str-cat "SoftWaterHardnessStatus" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                1 
+                ?loc)
+            (make-instance (str-cat "ObservationInstantWH" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#ObservationInstant)
+            (slot-insert$ (str-cat "ObservationInstantWH" ?*r*) 
+                http://www.w3.org/2006/time#inXSDDateTime 
+                1 
+                ?time)
+            (slot-insert$ (str-cat "ObservationInstantWH" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasWaterHardnessStatus 
+                1 
+                (str-cat "http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#SoftWaterHardnessStatus" ?*r*))
+            (slot-set ?loc 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasHardnessStatus 
+                soft
+            )
+        )
+    else
+        (and
+            (printout t "(" ?*r* ") Water Hardness status is HARD" crlf "On: " ?time crlf "In: " (instance-name ?loc) crlf)
+            (make-instance (str-cat "HardWaterHardnessStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#Hard)
+            (slot-insert$ (str-cat "HardWaterHardnessStatus" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                1 
+                ?loc)
+            (make-instance (str-cat "ObservationInstantWH" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#ObservationInstant)
+            (slot-insert$ (str-cat "ObservationInstantWH" ?*r*) 
+                http://www.w3.org/2006/time#inXSDDateTime 
+                1 
+                ?time)
+            (slot-insert$ (str-cat "ObservationInstantWH" ?*r*)
+                http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasWaterHardnessStatus
+                1 
+                (str-cat "http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#HardWaterHardnessStatus" ?*r*))
+            (slot-set ?loc 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasHardnessStatus 
+                hard)
+        )
+    )
+)
+

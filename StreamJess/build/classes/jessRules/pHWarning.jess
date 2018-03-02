@@ -1,0 +1,26 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+;	The pH as individual value for hard water should be between 6.0 and 9.0 (greater than 6.0 and less than 9.0)
+
+; Decide the status based on the observed value
+; Link the derived status with the interval of observation
+(defrule pHWarning
+    (declare (salience 54))
+    (object (is-a http://tw2.tw.rpi.edu/zhengj3/owl/epa.owl#MeasurementSite) 
+            (OBJECT ?loc) 
+            (http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasHardnessStatus 
+                        ?hs&:(eq ?hs "undefined"))
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) (instance-name http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#pH)))
+    )
+=>
+    (printout t "(StreamJess) WARNING: pH observation " (instance-name ?o) " need prior observation of WH on " (instance-name ?loc) crlf)
+)
+
+

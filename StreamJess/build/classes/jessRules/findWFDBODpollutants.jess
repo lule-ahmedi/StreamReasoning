@@ -1,0 +1,49 @@
+;
+; InWaterSense Rules
+;
+; This example rule set finds the BOD pollution sources discharging on river following the WFD regulations
+; This rule is activated when a moderate status of BOD is detected on a measurement site 
+; The process is followed by investigating the sources of pollution present on that site
+
+(bind ?poll nil)
+(defrule findBOD5SourcesOfPollution 
+	(object 
+        (is-a http://tw2.tw.rpi.edu/zhengj3/owl/epa.owl#MeasurementSite) 
+        (OBJECT ?loc)
+        (http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl#hasSourcesOfPollution $?sitepoll)
+    )
+    (object 
+            (is-a http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tmpModerateBODMeasurement) 
+            (OBJECT ?mob)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+    )
+=> 
+    (bind ?*r* (random))
+    (make-instance (str-cat (instance-name ?mob) ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#ModerateBODMeasurement map)
+    (slot-insert$ (str-cat (instance-name ?mob) ?*r*)
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+        1 
+        ?loc)
+    (slot-insert$ (str-cat (instance-name ?mob) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResultTime  
+        1 
+        ?ot)
+    (foreach ?poll ?sitepoll 
+        (foreach ?pollLsItem (slot-get ?poll http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl#potentialPollutant)
+            (if(eq (instance-name ?pollLsItem) http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#BiochemicalOxygenDemand) then 
+                (printout t "Pollution source: " (instance-name ?poll) crlf)
+		(slot-insert$ (str-cat (instance-name ?mob) ?*r*) 
+                    http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#foundPollutionSources 
+                    1
+                    (instance-name ?poll))
+            )
+        )
+    )
+    (unmake-instance ?mob)
+)
+
+;logjika eshte:
+;ta mbush listen tek foundPollutionSources vetia e ModeratePHMeasurement dhe mandej ne cdo system startup nje rregull 
+;te fshij instancat e tmpModeratePHMeasurement
+;fshiji (and ne cdo rule

@@ -1,0 +1,154 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://inwatersense.uni-pr.edu/" > 
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user34">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user22">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user54">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user10">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user42">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user14">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user02">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user70">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user90">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user74">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user30">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user62">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user94">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user50">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user82">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user23">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user11">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user43">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user31">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user03">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user91">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user63">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user51">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user83">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user71">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user12">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user00">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user44">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user32">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user20">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user64">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user04">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user24">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user92">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user80">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user52">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user40">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user84">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user72">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user60">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user01">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user33">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user21">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user53">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user13">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user81">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user41">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user73">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user61">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://inwatersense.uni-pr.edu/user93">
+    <j.0:follows rdf:resource="http://inwatersense.uni-pr.edu/user9"/>
+  </rdf:Description>
+</rdf:RDF>

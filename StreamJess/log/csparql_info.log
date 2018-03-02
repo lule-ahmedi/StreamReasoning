@@ -1,0 +1,9 @@
+INFO  23230 [2016-03-13 12:45:07,870] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 43 triples streamed so far
+INFO  19549 [2016-03-13 12:46:42,434] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 34 triples streamed so far
+INFO  43570 [2016-03-13 12:47:06,455] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 79 triples streamed so far
+INFO  58498 [2016-03-13 12:47:21,383] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 107 triples streamed so far
+INFO  22428 [2016-03-13 12:48:47,840] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 41 triples streamed so far
+INFO  43727 [2016-03-13 12:49:09,139] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 81 triples streamed so far
+INFO  63943 [2016-03-13 12:49:29,355] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 119 triples streamed so far
+INFO  86290 [2016-03-13 12:49:51,702] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 161 triples streamed so far
+INFO  109184 [2016-03-13 12:50:14,596] [Thread-0] eu.larkc.csparql.readytogopack.streamer.LBSMARDFStreamTestGenerator  - 204 triples streamed so far

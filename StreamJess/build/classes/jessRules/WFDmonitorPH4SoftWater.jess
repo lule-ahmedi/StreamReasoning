@@ -1,0 +1,79 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; 	The pH as individual value for soft water should be between 4.5 and 9.0 (greater than 4.5 and less than 9.0)
+
+; Decide the status based on the observed value
+; Link the derived status with the instant of observation
+(defrule classifySoftPHObsValues
+    (declare (salience 54))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://tw2.tw.rpi.edu/zhengj3/owl/epa.owl#MeasurementSite) 
+            (OBJECT ?loc) 
+            (http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasHardnessStatus 
+                        ?hs&:(eq ?hs "soft"))
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) (instance-name http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#pH)))
+    )	
+=>
+	(bind ?*r* (random))
+        (printout t "(StreamJess)")
+	(if (and (< ?x 9) (> ?x 4.5))
+	then 
+		(and 
+			(printout t "(" ?*r* ") pH soft water status is GOOD/HIGH" crlf "On: " ?time crlf "In: " (instance-name ?loc) crlf)
+			(make-instance (str-cat "GoodHighPHStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#GoodHighPHMeasurement map)
+                        (slot-insert$ (str-cat "GoodHighPHStatus" ?*r*)
+                            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                            1 
+                            ?loc)
+                        (make-instance (str-cat "ObservationTmInstantPH" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#ObservationInstant map)
+                        (slot-insert$ (str-cat "ObservationTmInstantPH" ?*r*) 
+                                http://www.w3.org/2006/time#inXSDDateTime 
+                                1 
+                                ?time)
+                        (slot-insert$ (str-cat "ObservationTmInstantPH" ?*r*)
+                                http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasStatus 
+                                1 
+                                (str-cat "http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#GoodHighPHStatus" ?*r*))
+		)
+	else
+		(and
+			(printout t "(" ?*r* ") pH soft water status is MODERATE" crlf "On: " ?time crlf "In: " (instance-name ?loc) crlf)
+			(make-instance (str-cat "ModeratePHStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#ModeratePHMeasurement map)
+                        (slot-insert$ (str-cat "ModeratePHStatus" ?*r*)
+                            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                            1 
+                            ?loc)
+                        (make-instance (str-cat "ObservationTmInstantPH" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#ObservationInstant map)
+                        (slot-insert$ (str-cat "ObservationTmInstantPH" ?*r*) 
+                                http://www.w3.org/2006/time#inXSDDateTime 
+                                1 
+                                ?time)
+                        (slot-insert$ (str-cat "ObservationTmInstantPH" ?*r*)
+                                http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#hasStatus 
+                                1 
+                                (str-cat "http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#ModeratePHStatus" ?*r*))
+		)
+	)
+)
+
+

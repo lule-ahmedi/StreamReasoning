@@ -1,0 +1,109 @@
+;
+; InWaterSense Rules
+;
+; This example rule set expresses the WFD classification of water bodies through the following regulations
+; 	If total ammonia in mg N/l is less than 0.040 (mean), than  river belongs to the high status of nutrient conditions (color code: blue)
+;	If total ammonia in mg N/l is less than 0.065 (mean), than  river belongs to the good status of nutrient conditions (color code: green)
+
+
+; Decide the status based on the computed average value
+; Link the derived status with the interval of observation
+
+(defrule TotalAmmoniaObservationsClassification
+    (declare (salience 9))
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#ObservationValue) 
+            (OBJECT ?ov)
+            (http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue ?x)
+    )
+    (object (is-a http://purl.oclc.org/NET/ssnx/ssn#SensorOutput) 
+            (OBJECT ?so) 
+            (http://purl.oclc.org/NET/ssnx/ssn#hasValue ?ov)
+    )
+    (object (is-a http://www.w3.org/2006/time#Instant)              
+            (OBJECT ?ot)  
+            (http://www.w3.org/2006/time#inXSDDateTime ?time) 	
+    )
+    (object (is-a http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#tmpObservation)
+            (OBJECT ?o)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResult ?so)
+            (http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation ?loc)
+            (http://purl.oclc.org/NET/ssnx/ssn#observationResultTime ?ot)
+            (http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation 
+			?qo&:(eq (instance-name ?qo) http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#TotalAmmonia))
+    )
+=>
+    (bind ?*r* (random))
+    (printout t "(StreamJess)" crlf)
+    (if (and (< ?x 0.065) (> ?x 0.04)) 
+    then 
+            (and
+                    (printout t "GOOD status detected: TotalAmmonia" ?*r*  crlf)
+                    (make-instance (str-cat "GoodTotalAmmoniaStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#GoodTotalAmmoniaMeasurement map)
+                    (slot-insert$ (str-cat "GoodTotalAmmoniaStatus" ?*r*)
+                        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                        1 
+                        ?loc)
+                    (slot-insert$ (str-cat "GoodTotalAmmoniaStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        FALSE)
+            )
+    )
+    (if (< ?x 0.04)
+    then
+            (and
+                    (printout t "HIGH status detected: TotalAmmonia" ?*r* crlf)
+                    (make-instance (str-cat "HighTotalAmmoniaStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#HighTotalAmmoniaMeasurement map)
+                    (slot-insert$ (str-cat "HighTotalAmmoniaStatus" ?*r*)
+                        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                        1 
+                        ?loc)
+                    (slot-insert$ (str-cat "HighTotalAmmoniaStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        FALSE)
+            )
+    )
+    (if (> ?x 0.065)
+    then
+            (and
+                    (printout t "MODERATE status detected: TotalAmmonia" ?*r* crlf)
+                    (make-instance (str-cat "ModerateTotalAmmoniaStatus" ?*r*) of http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#tmpModerateTotalAmmoniaMeasurement map)
+                    (slot-insert$ (str-cat "ModerateTotalAmmoniaStatus" ?*r*)
+                            http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+                            1 
+                            ?loc)
+                    (slot-insert$ (str-cat "ModerateTotalAmmoniaStatus" ?*r*)
+                            http://purl.oclc.org/NET/ssnx/ssn#observationResultTime 
+                            1 
+                            ?ot)
+                    (slot-set ?loc 
+                            http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl#isPolluted 
+                        TRUE)
+            )
+    )
+    (make-instance (str-cat (instance-name ?o) ?*r*) of http://purl.oclc.org/NET/ssnx/ssn#Observation map)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#observationResultLocation 
+        1 
+        ?loc)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResult
+        1 
+        ?so)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#observationResultTime
+        1 
+        ?ot)
+    (slot-insert$ (str-cat (instance-name ?o) ?*r*)
+        http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation
+        1 
+        http://inwatersense.uni-pr.edu/ontologies/inws-core.owl#TotalAmmonia)
+    (unmake-instance ?o)
+)
