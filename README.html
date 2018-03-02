@@ -1,0 +1,115 @@
+<html>
+<head>
+    <link href="site.css" rel="stylesheet" />
+    <title>C-SWRL & StreamJess systems</title>
+</head>
+<body>
+    <div class="hd">
+        <div class="header">CSWRL & StreamJess Stream Reasoning systems</div>
+    </div>
+    <div class="content">
+        <ol>
+            <li><a href="#down">Downloads</a></li>
+            <li><a href="#usC">Using C-SWRL</a></li>
+            <li><a href="#usS">Using StreamJess</a></li>
+            <li><a href="#sup">Getting Support</a></li>
+            <li><a href="#lit">Literature</a></li>
+        </ol>
+        <p>
+            C-SWRL & StreamJess are Stream Reasoning systems, extending <a href="http://streamreasoning.org/resources/c-sparql">C-SPARQL</a> with non-monotonic capabilities. C-SWRL is a unique Semantic Web system for reasoning over stream data, while StreamJess is a <a href="http://www.jessrules.com/">Jess</a> system capable of expressive reasoning over stream data.
+        </p>
+        <hr />
+        <h1><a name="down">Downloads</a></h1>
+        <p>
+            Systems are written in Java 1.8. The &quot;ready to go packs&quot; are NetBeans projects.
+            </p>
+        <p>
+            C-SWRL can be downloaded <a href="apps/CSWRLPROD.rar">here</a>, while
+            StreamJess <a href="apps/StreamJessPROD.rar">here</a>.
+            </p>
+        <p>
+        <hr />
+        <h1><a name="usC">Using C-SWRL</a></h1>
+        <p>
+            To start using C-SWRL the following steps need to be performed:
+        </p>
+        <ol>
+            <li>Download and unzip files into your local folder</li>
+            <li>Import the project into your NetBeans</li>
+            <li>Download the InWaterSense ontologies: <a href="http://inwatersense.uni-pr.edu/ontologies/inws-core.owl">core</a>, <a href="http://inwatersense.uni-pr.edu/ontologies/inws-regulations.owl">regulations</a> and <a href="http://inwatersense.uni-pr.edu/ontologies/inws-pollutants.owl">pollutants</a></li>
+            <li>Open main\CSWRL.java and replace the InWaterSense ontologies path with your local copies ones</li>
+            <li>Download and import the jar libraries into your project: 
+                <ul>
+                    <li><a href="http://streamreasoning.org/resources/c-sparql">C-SPARQL</a> v0.9.6</li>
+                    <li><a href="http://owlapi.sourceforge.net/">OWL API</a> v4.0.2</li>
+                    <li><a href="https://github.com/protegeproject/swrltab">SWRLTab</a> v1.0</li>
+                    <li><a href="https://github.com/protegeproject/swrlapi-drools-engine">SWRL API Drools Engine</a> v1.0 and</li>
+                    <li><a href="http://junit.org/junit4/">JUnit </a> v4.10</li>
+                </ul>
+            </li>
+            <li>Run the application</li>
+
+        </ol>
+        <p>
+            &nbsp;
+            Follow <a href="tutorials/CSWRL-guide.pdf">this</a> tutorial to get started with C-SWRL.</p>
+        <hr />
+        <h1><a name="usS">Using StreamJess</a></h1>
+        <p>
+            To start using StreamJess the following steps need to be performed:
+        </p>
+        <ol>
+            <li>Download and unzip the files into your local folder</li>
+            <li>Import the project into your NetBeans</li>
+            <li>Download the InWaterSense ontology Protege project file <a href="http://inwatersense.uni-pr.edu/ontologies/inws-all.pprj">Link</a></li>
+            <li>Open main\StreamJess.java and replace the InWaterSense ontology Protege project file path with your local copy of it</li>
+            <li>Download and import the necessary jar libraries into your project: 
+                <ul>
+                    <li><a href="http://streamreasoning.org/resources/c-sparql">C-SPARQL</a> v0.9.6</li>
+                    <li><a href="http://www.jessrules.com/">Jess</a> v7.1p2</li>
+                    <li><a href="http://www.jessrules.com/jesswiki/view?JessTab">Jess Tab</a> v1.7 and</li>
+                    <li><a href="http://protege.stanford.edu/">Protege</a> v3.5</li>
+                </ul>
+            </li>
+            <li>Run the application</li>
+        </ol>
+        <p>
+
+            A short video demonstration about the usage of StreamJess can be found <a href="http://inwatersense.uni-pr.edu/streamjess/demo.html">here</a>.</p>
+        <p>
+
+            Follow <a href="tutorials/StreamJess-guide.pdf">this</a> tutorial to get started with StreamJess.</p>
+        <hr />
+        <h1><a name="sup">Getting support</a></h1>
+        <p>
+            <span style="color: rgb(34, 34, 34); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">For more information on C-SWRL and StreamJess contact e.jajaga at seeu dot edu dot mk</span></p>
+        <hr />
+        <h1><a name="lit">Literature</a></h1>
+        <ol>
+            <li>Jajaga, E., Ahmedi, L. and Ahmedi, F. 
+                    <strong>StreamJess: Stream Data Reasoning System for Water Quality Monitoring</strong>. 
+                    International Journal of Metadata, Semantics and Ontologies (In press) 
+                <a href="http://www.inderscience.com/info/ingeneral/forthcoming.php?jcode=ijmso">Download</a></li>
+            <li>Jajaga, E., Ahmedi, L. and Ahmedi, F. <strong>StreamJess: Enabling Jess for Stream Data Reasoning and the Water Domain Case</strong>
+                (Demo paper) 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW2016), Bologna, 2016.
+                <a href="http://luleahmedi.uni-pr.edu/docs/pubs/StreamJessDemoPaper2016.pdf">Download</a>
+            </li>
+
+            <li>Jajaga, E., Ahmedi, L. and Ahmedi, F. <strong>An Expert System for Water Quality Monitoring Based on Ontology</strong>, 
+                    in Proc. of the 9th Metadata and Semantics Research Conference (MTSR2015), Manchester, 2015.
+                <a href="http://luleahmedi.uni-pr.edu/docs/pubs/ExpertSys2015.pdf">Download</a>
+            </li>
+
+            <li>Ahmedi, L., Jajaga, E. and Ahmedi, F. <strong>An Ontology Framework for Water Quality Management</strong>,
+                    in Proc. of the 6th International Conference on Semantic Sensor Networks, Sydney, 2013.
+                <a href="ceur-ws.org/Vol-1063/paper3.pdf">Download</a>
+            </li>
+            <li>Jajaga, E., Ahmedi, L. and Abazi-Bexheti, L.
+                    <strong>Semantic Web Trends on Reasoning Over Sensor Data</strong>, 
+                    in Proc. of the 8th South East European Doctoral Student Conference, Thessaloniki, 2013.
+                <a href="https://www.researchgate.net/publication/255719059_Semantic_Web_Trends_on_Reasoning_Over_Sensor_Data">Download</a>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
