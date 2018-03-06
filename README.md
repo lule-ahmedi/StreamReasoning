@@ -21,7 +21,8 @@ SWRLTab v1.0
 SWRL API Drools Engine v1.0 and
 JUnit v4.10
 6. Run the application
-  Follow this tutorial to get started with C-SWRL.
+
+Follow the tutorial to get started with C-SWRL.
 
 # Using StreamJess
 To start using StreamJess the following steps need to be performed:
@@ -36,12 +37,11 @@ Jess v7.1p2
 Jess Tab v1.7 and
 Protege v3.5
 6. Run the application
-A short video demonstration about the usage of StreamJess can be found here.
 
-Follow this tutorial to get started with StreamJess.
+Follow the tutorial to get started with StreamJess.
 
 # Getting support
-For more information on C-SWRL and StreamJess contact e.jajaga at seeu dot edu dot mk
+For more information on C-SWRL and StreamJess contact edmond.jajaga at ubt-uni dot net
 
 # Literature
 - E. Jajaga dhe L. Ahmedi. C-SWRL: A unique Semantic Web framework for reasoning over stream data. Intl. Journal of Semantic Computing, 2017.
