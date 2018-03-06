@@ -1,11 +1,8 @@
 # C-SWRL and StreamJess
 
-C-SWRL & StreamJess are Stream Reasoning systems, extending C-SPARQL with non-monotonic capabilities. C-SWRL is a unique Semantic Web system for reasoning over stream data, while StreamJess is a Jess system capable of expressive reasoning over stream data.
+- C-SWRL & StreamJess are Stream Reasoning systems, extending C-SPARQL with non-monotonic capabilities. C-SWRL is a unique Semantic Web system for reasoning over stream data, while StreamJess is a Jess system capable of expressive reasoning over stream data.
 
-# Downloads
-Systems are written in Java 1.8. The "ready to go packs" are NetBeans projects.
-
-C-SWRL can be downloaded here, while StreamJess here.
+- Systems are written in Java 1.8. The "ready to go packs" are NetBeans projects.
 
 # Using C-SWRL
 To start using C-SWRL the following steps need to be performed:
