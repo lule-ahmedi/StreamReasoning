@@ -44,8 +44,10 @@ Follow this tutorial to get started with StreamJess.
 For more information on C-SWRL and StreamJess contact e.jajaga at seeu dot edu dot mk
 
 # Literature
-1. Jajaga, E., Ahmedi, L. and Ahmedi, F. StreamJess: Stream Data Reasoning System for Water Quality Monitoring. International Journal of Metadata, Semantics and Ontologies (In press) Download
-2. Jajaga, E., Ahmedi, L. and Ahmedi, F. StreamJess: Enabling Jess for Stream Data Reasoning and the Water Domain Case (Demo paper) 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW2016), Bologna, 2016. Download
-3. Jajaga, E., Ahmedi, L. and Ahmedi, F. An Expert System for Water Quality Monitoring Based on Ontology, in Proc. of the 9th Metadata and Semantics Research Conference (MTSR2015), Manchester, 2015. Download
-4. Ahmedi, L., Jajaga, E. and Ahmedi, F. An Ontology Framework for Water Quality Management, in Proc. of the 6th International Conference on Semantic Sensor Networks, Sydney, 2013. Download
-5. Jajaga, E., Ahmedi, L. and Abazi-Bexheti, L. Semantic Web Trends on Reasoning Over Sensor Data, in Proc. of the 8th South East European Doctoral Student Conference, Thessaloniki, 2013. Download
+- E. Jajaga dhe L. Ahmedi. C-SWRL: A unique Semantic Web framework for reasoning over stream data. Intl. Journal of Semantic Computing, 2017.
+- E. Jajaga and L. Ahmedi. C-SWRL: SWRL for Reasoning over Stream Data. 1st Intl. Workshop on Semantic Data Integration (SDI '17) in conjunction with the 11th IEEE Intl. Conference on Semantic Computing, San Diego, California, USA, 2017.
+- Jajaga, E., Ahmedi, L. and Ahmedi, F. StreamJess: Stream Data Reasoning System for Water Quality Monitoring. International Journal of Metadata, Semantics and Ontologies, 2016.
+- Jajaga, E., Ahmedi, L. and Ahmedi, F. StreamJess: Enabling Jess for Stream Data Reasoning and the Water Domain Case (Demo paper) 20th International Conference on Knowledge Engineering and Knowledge Management (EKAW2016), Bologna, 2016.
+- Jajaga, E., Ahmedi, L. and Ahmedi, F. An Expert System for Water Quality Monitoring Based on Ontology, in Proc. of the 9th Metadata and Semantics Research Conference (MTSR2015), Manchester, 2015.
+- Ahmedi, L., Jajaga, E. and Ahmedi, F. An Ontology Framework for Water Quality Management, in Proc. of the 6th International Conference on Semantic Sensor Networks, Sydney, 2013. 
+- Jajaga, E., Ahmedi, L. and Abazi-Bexheti, L. Semantic Web Trends on Reasoning Over Sensor Data, in Proc. of the 8th South East European Doctoral Student Conference, Thessaloniki, 2013.
