@@ -8,6 +8,7 @@
       </li>
     </ul>
 </p>
+<p>For a more detailed description of the StreamReasoning project, please visit https://streamreasoning.uni-pr.edu/.</p>
 <hr/>
 
 <h1><a name="usC">Using C-SWRL</a></h1>
