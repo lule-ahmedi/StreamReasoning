@@ -60,12 +60,12 @@
 
   <h1><a name="sup">Contributors and Contact</a></h1>
       <p>
-		<ul>
-		<li><a href="http://luleahmedi.uni-pr.edu/">Prof. Dr. Lule Ahmedi</a> (Project Founder)</li>
-			<li><a href="https://fna.uni-pr.edu/Personeli/Personeli-akademik/Mr--sc--Figene-Ahmedi.aspx">Prof. Assoc. Figene Ahmedi</a></li>
-			<li>Edmond Jajaga, PhD</li>
-			</ul>
-			<p>For any questions related to the systems, contact <a href="mailto:lule.ahmedi@uni-pr.edu?subject=StreamReasoning">Professor Lule Ahmedi</a></p>
+	<ul>
+		<li>Prof. Dr. Lule Ahmedi (Project Founder)</li>
+		<li>Prof. Assoc. Figene Ahmedi</li>
+		<li>Edmond Jajaga, PhD</li>
+	</ul>
+	<p>For any questions related to the systems, contact <a href="mailto:lule.ahmedi@uni-pr.edu?subject=StreamReasoning">Professor Lule Ahmedi</a></p>
 
 <hr />
       <h1><a name="sup">Acknowledgements</a></h1>
