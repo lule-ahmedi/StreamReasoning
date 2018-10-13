@@ -61,7 +61,7 @@
   <h1><a name="sup">Contributors and Contact</a></h1>
       <p>
 		<ul>
-		<li><a href="http://luleahmedi.uni-pr.edu/">Prof. Dr. Lule Ahmedi</a> (Founder, Project Owner)</li>
+		<li><a href="http://luleahmedi.uni-pr.edu/">Prof. Dr. Lule Ahmedi</a> (Project Founder)</li>
 			<li><a href="https://fna.uni-pr.edu/Personeli/Personeli-akademik/Mr--sc--Figene-Ahmedi.aspx">Prof. Assoc. Figene Ahmedi</a></li>
 			<li>Edmond Jajaga, PhD</li>
 			</ul>
